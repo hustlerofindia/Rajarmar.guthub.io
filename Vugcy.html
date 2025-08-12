@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        :root {
+            --primary-color: #6c63ff;
+            --secondary-color: #4d44db;
+            --accent-color: #ff6584;
+            --dark-color: #2d2b3a;
+            --light-color: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7ff;
+            color: var(--dark-color);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 3rem;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 10px 30px rgba(108, 99, 255, 0.2);
+        }
+        
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .logo:hover {
+            transform: scale(1.05) rotate(5deg);
+        }
+        
+        .service-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+            background: white;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(108, 99, 255, 0.2);
+        }
+        
+        .card-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .card-title {
+            color: var(--secondary-color);
+            font-weight: 700;
+        }
+        
+        .card-body {
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .animate-delay-1 {
+            animation-delay: 0.2s;
+        }
+        
+        .animate-delay-2 {
+            animation-delay: 0.4s;
+        }
+        
+        .animate-delay-3 {
+            animation-delay: 0.6s;
+        }
+        
+        .animate-delay-4 {
+            animation-delay: 0.8s;
+        }
+    </style>
+</head>
+<body>
+    <div class="header text-center animate__animated animate__fadeIn">
+        <div class="logo-container">
+            <img src="https://i.ibb.co/HfJwzZVk/IMG-20250801-114856.jpg" alt="Company Logo" class="logo animate__animated animate__bounceIn">
+        </div>
+        <h1 class="animate__animated animate__fadeInUp">Our Services</h1>
+        <p class="lead animate__animated animate__fadeInUp animate__delay-1s">Premium solutions tailored to your needs</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!-- Service Card 1 -->
+            <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp animate-delay-1">
+                <div class="service-card">
+                    <div class="card-body">
+                        <div class="card-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="card-title">Website Design & Development</h3>
+                        <p class="card-text">Custom websites designed to impress and convert your visitors.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 2 -->
+            <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp animate-delay-2">
+                <div class="service-card">
+                    <div class="card-body">
+                        <div class="card-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="card-title">Mobile App Development</h3>
+                        <p class="card-text">Android & iOS apps built for performance and user engagement.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 3 -->
+            <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp animate-delay-3">
+                <div class="service-card">
+                    <div class="card-body">
+                        <div class="card-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="card-title">E-commerce Solutions</h3>
+                        <p class="card-text">Complete online store setups to boost your sales.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 4 -->
+            <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp animate-delay-1">
+                <div class="service-card">
+                    <div class="card-body">
+                        <div class="card-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3 class="card-title">UI/UX Design</h3>
+                        <p class="card-text">Beautiful interfaces that enhance user experience.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 5 -->
+            <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp animate-delay-2">
+                <div class="service-card">
+                    <div class="card-body">
+                        <div class="card-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="card-title">Website Maintenance & Support</h3>
+                        <p class="card-text">Ongoing care to keep your digital presence flawless.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 6 -->
+            <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp animate-delay-3">
+                <div class="service-card">
+                    <div class="card-body">
+                        <div class="card-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 class="card-title">Custom Software Solutions</h3>
+                        <p class="card-text">Tailored applications for your unique business needs.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 7 -->
+            <div class="col-md-6 col-lg-4 offset-lg-2 animate__animated animate__fadeInUp animate-delay-1">
+                <div class="service-card">
+                    <div class="card-body">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="card-title">Digital Marketing & SEO</h3>
+                        <p class="card-text">Strategies to increase your online visibility and growth.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 8 -->
+            <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp animate-delay-2">
+                <div class="service-card">
+                    <div class="card-body">
+                        <div class="card-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="card-title">Domain Registration & Hosting</h3>
+                        <p class="card-text">Reliable hosting solutions for your online presence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer text-center animate__animated animate__fadeIn">
+        <div class="container">
+            <p>© 2023 Our Services. All rights reserved.</p>
+            <div class="social-icons mt-3">
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
